@@ -81,6 +81,10 @@ class Effect {
     window.addEventListener("pointerup", () => {
       this.pointer.pressed = false;
     });
+    window.addEventListener("pointerleave", () => {
+      this.pointer.x = undefined;
+      this.pointer.y = undefined;
+    });
   }
 
   init(context) {
